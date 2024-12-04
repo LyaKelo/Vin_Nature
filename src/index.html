@@ -5,11 +5,16 @@
     <title>page d'accueil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+  </head>  
+  
+  <body>
+
+    <extends src="base-layout.html"></extends>
 
     <div class="container">
       <div class="row">
-        <div class="col-12">Header</div>
-        <div class="col-8">phrase d'accroche</div>
+        <div class="col-12"><a href="index.html">accueil</a> <a href="page-vin-rouge.html">page vin rouge</a> <a href="">page vin blanc</a> </div>
+        <div class="col-8 offset-2">phrase d'accroche</div>
       </div>
       <div class="row">
         <div class="col-4">image 1</div>
@@ -20,7 +25,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-1">flèche 1</div>
+        <div class="col-1 offset-5">flèche 1</div>
       </div>
       <div class="row">
         <div class="col-6 col-md-5 col-lg-4">nom du vin</div>
@@ -43,8 +48,8 @@
       </div>
       <div class="row">
         <div class="col-3">section 1</div>
-        <div class="col-3">section 2</div>
-        <div class="col-3">section 3</div>
+        <div class="col-3 offset-1">section 2</div>
+        <div class="col-3 offset-1">section 3</div>
       </div>
       <div class="row">
         <div class="col-4">texte 1</div>
@@ -55,28 +60,28 @@
 
     <div class="container">
       <div class="row">
-       <div class="col-1">flèche 2</div>
+       <div class="col-1 offset-5">flèche 2</div>
       </div>
       <div class="row">
         <div class="col-3">titre 3</div>
        </div>
        <div class="row">
-        <div class="col-3 col-md-2 col-lg-2">nom 1</div>
-        <div class="col-3 col-md-2 col-lg-2">nom 2</div>
+        <div class="col-3 col-md-2 col-lg-2 offset-2 offset-lg-3">nom 1</div>
+        <div class="col-3 col-md-2 col-lg-2 offset-2 offset-lg-3">nom 2</div>
        </div>
        <div class="row">
-        <div class="col-5 col-md-4 col-lg-4">etiquette 1</div>
+        <div class="col-5 col-md-4 col-lg-4 offset-2 offset-lg-3">etiquette 1</div>
         <div class="col-5 col-md-4 col-lg-4">etiquette 2</div>
        </div>
        <div class="row">
-        <div class="col-3 col-lg-2">bouton 4</div>
-        <div class="col-3 col-lg-2">bouton 5</div>
+        <div class="col-3 col-lg-2 offset-2 offset-lg-3">bouton 4</div>
+        <div class="col-3 col-lg-2 offset-2 offset-lg-3">bouton 5</div>
        </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-1">flèche 3</div>
+        <div class="col-1 offset-5">flèche 3</div>
        </div>
        <div class="row">
         <div class="col-6 col-md-5 col-lg-4">titre 4</div>
@@ -86,7 +91,7 @@
         <div class="col-7 col-md-6 col-lg-6">image 6</div>
        </div>
        <div class="row">
-        <div class="col-12 col-md-10 col-lg-8">bouton 6</div>
+        <div class="col-12 col-md-10 col-lg-8 offset-0 offset-md-1 offset-lg-2">bouton 6</div>
        </div>
     </div>
 
@@ -98,8 +103,8 @@
 
     
 
-  </head>
-  <body>
+  
+
     
 
     <script src="js/main.js" type="module"></script>
