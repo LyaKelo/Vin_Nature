@@ -37,3 +37,45 @@ $grid-breakpoints: (
 .container {
   margin-bottom: 20px;
 }
+
+@font-face {
+  font-family:'AbhayaLibre';
+  src: url('../fontes/AbhayaLibre-Regular.woff2');
+}
+@font-face {
+  font-family:'AbhayaLibre_bold';
+  src: url('../fontes/AbhayaLibre-ExtraBold.woff2');
+}
+
+body {
+  font-family:'AbhayaLibre';
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: space-between;
+}
+.header_logo {
+ width: 80px;
+}
+.header_mid_section {
+ display: flex;
+ gap: 25px;
+}
+.header_icons {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+a {
+  text-decoration: none;
+}
+.h_icons {
+  text-decoration: none;
+}
+.h_icons_2 {
+  text-decoration: none;
+}
