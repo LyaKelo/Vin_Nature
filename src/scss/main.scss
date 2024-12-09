@@ -50,6 +50,11 @@ $grid-breakpoints: (
 body {
   font-family:'AbhayaLibre';
   background-image: url(../images/background\ clouds.svg);
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(4);
+  background-attachment: fixed;
+
 }
 
 .header_content {
@@ -84,6 +89,10 @@ a {
 }
 
 
+.section_notre_selection {
+  background: linear-gradient(180deg, rgba(238, 190, 120, 0.50) 18.5%, rgba(255, 255, 255, 0.47) 100%);
+backdrop-filter: blur(2px);
+}
 .accueil_catchphrase {
   font-family:'AbhayaLibre_bold';
   text-align: center;
@@ -97,7 +106,7 @@ a {
 .button_1 {
   display: flex;
   justify-content: center;
-  margin-top: 178;
+  margin-top: 250px;
 }
 .section_notre_selection button {
   display: flex;
@@ -109,5 +118,14 @@ a {
  border: 1px solid var(--Noir, #000);
  font-family:'AbhayaLibre_bold';
  font-size: 20px;
+}
+.section_notre_selection img
+{
+  border-radius: 80px 0px;
+}
+
+.section_notre_gamme {
+  margin-top: 100px;
+  background-color: #FFFFFF;
 }
 
