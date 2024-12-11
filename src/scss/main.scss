@@ -15,17 +15,17 @@ video {
   display: block;
 }
 
-.row + .row {
-  margin-top: 5px;
-}
+// .row + .row {
+//   margin-top: 5px;
+// }
 
-.row > .col,
-.row > [class^=col-] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(86, 61, 124, .2);
-}
+// .row > .col,
+// .row > [class^=col-] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, .15);
+//   border: 1px solid rgba(86, 61, 124, .2);
+// }
 
 $grid-breakpoints: (
   xs: 0,
@@ -118,6 +118,7 @@ backdrop-filter: blur(2px);
  border: 1px solid var(--Noir, #000);
  font-family:'AbhayaLibre_bold';
  font-size: 20px;
+ background-color: rgb(247, 239, 226);
 }
 .section_notre_selection img
 {
@@ -153,15 +154,15 @@ backdrop-filter: blur(2px);
 }
 .section_notre_gamme .boutons {
   margin-top: 30px;
-  gap: 10px;
-  display: flex;
- flex-direction: column;
- align-items: flex-start;
 }
 .section_notre_gamme button {
   font-family:'AbhayaLibre_bold';
   border: 1px solid var(--Noir, #000);
   padding: 15px 10px;
+  background-color: white;
+  gap: 10px;
+  display: flex;
+  
 }
 
 .zone .nos_valeurs {
@@ -219,8 +220,62 @@ font-weight: 800;
 background-color: rgba(208, 196, 196, 0.62);
 }
 
+.zone .vignerons .titre {
+  display: flex;
+height: 91px;
+flex-direction: column;
+justify-content: center;
+color: var(--Noir, #000);
+font-family: "Abhaya Libre ExtraBold";
+font-size: 30px;
+font-weight: 800;
+}
+.zone .vignerons .noms {
+ font-family: "Abhaya Libre ExtraBold";
+ font-size: 16px;
+ font-weight: 800;
+}
+.zone .vignerons .nom {
+  display: flex;
+  background-color: white;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.zone .vignerons .etiquettes {
+  display: flex;
+  width: 350px;
+  height: 323px;
+  padding: 0px 20px;
+  padding-top: 35px;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+ font-size: 13.5px;
+ font-weight: 500;
+  background: linear-gradient(180deg, #74292E 0%, #DA4D56 100%);
+}
+.zone .vignerons button {
+  display: flex;
+ padding: 15px 10px;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ border: 1px solid #FFF;
+ color: #FFF;
+ text-align: center;
+ font-family: "Abhaya Libre ExtraBold";
+ font-size: 20px;
+ font-weight: 800;
+ background-color: #B8222C;
+ margin-top: -85px;
+ margin-left: 15px;
+}
+
 .zone .produits {
   background: linear-gradient(180deg, #74292E 69%, #B8222C 100%);
+  padding-top: 20px;
 }
 .zone .produits .titre {
   display: flex;
@@ -231,27 +286,22 @@ flex: 1 0 0;
 color: var(--Blanc, #FFF);
 font-family: "Abhaya Libre ExtraBold";
 font-size: 30px;
-font-style: normal;
 font-weight: 800;
-line-height: normal;
+margin: 72px 0px;
 }
 .zone .produits button {
-  display: flex;
- height: 70px;
- padding: 5px 10px;
+ display: flex;
+ width: 100%;
+ margin-top: 72px;
+ margin-bottom: 30px;
+ padding: 15px 10px;
  justify-content: center;
- align-items: center;
  gap: 10px;
  border: 1px solid #FFF;
  color: #FFF;
-text-align: center;
-font-family: "Abhaya Libre ExtraBold";
-font-size: 20px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-background-color: #B8222C;
-}
-.zone .produits .bouton {
-  margin-top: 72px;
+ text-align: center;
+ font-family: "Abhaya Libre ExtraBold";
+ font-size: 20px;
+ font-weight: 800;
+ background-color: #B8222C;
 }
