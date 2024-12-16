@@ -313,8 +313,40 @@ margin: 72px 0px;
 
 
 
+.fil_ariane_container {
+  background-image: url(../images/ariane_background_2.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 212px;
+}
+.fil_ariane {
+ display: flex;
+ background-color: #FFF;;
+ align-items: center;
+ gap: 15px;
+ height: 90px;
+ margin-top: 78px;
+ padding-left: 100px;
+}
+.ariane_element {
+  display: flex;
+ align-items: center;
+ gap: 15px;
+ flex-shrink: 0;
+}
 
-
-.zone .texte_description .type_vin {
-  
+.zone {
+  margin-top: 220px;
+}
+.zone .texte_description .titre {
+  font-family: "Abhaya Libre ExtraBold";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.zone .texte_description {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
