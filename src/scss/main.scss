@@ -54,7 +54,8 @@ body {
   background-size: cover;
   backdrop-filter: blur(4);
   background-attachment: fixed;
-
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .header_content {
@@ -103,26 +104,27 @@ backdrop-filter: blur(2px);
   margin-top: 55px;
   background: linear-gradient(180deg, rgba(238, 190, 120, 0.50) 18.5%, rgba(255, 255, 255, 0.47) 100%);
 }
-.button_1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 250px;
-}
+
 .section_notre_selection button {
-  display: flex;
-  width: 276px;
-  padding: 15px 10px;
+  width: fit-content;
+  padding: 15px 70px;
   justify-content: center;
-  align-items: center;
   gap: 10px;
  border: 1px solid var(--Noir, #000);
  font-family:'AbhayaLibre_bold';
  font-size: 20px;
  background-color: rgb(247, 239, 226);
 }
+
 .section_notre_selection img
 {
   border-radius: 80px 0px;
+}
+
+.section_notre_selection_2 {
+display: flex;
+gap: auto;
+align-items: center;
 }
 
 .section_notre_gamme {
@@ -336,7 +338,11 @@ margin: 72px 0px;
 }
 
 .zone {
-  margin-top: 220px;
+  margin-top: 50px;
+}
+.vin_description {
+  background: rgba(255, 255, 255, 0.70);
+  padding: 150px 0px;
 }
 .zone .texte_description .titre {
   font-family: "Abhaya Libre ExtraBold";
@@ -348,5 +354,15 @@ line-height: normal;
 .zone .texte_description {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 28px; 
+}
+.zone .description_buttons button {
+  display: flex;
+width: max-content;
+height: 40px;
+padding: 15px 10px;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+border: 1px solid var(--Noir, #000);
 }
