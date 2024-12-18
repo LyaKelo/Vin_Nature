@@ -104,7 +104,6 @@ backdrop-filter: blur(2px);
   margin-top: 55px;
   background: linear-gradient(180deg, rgba(238, 190, 120, 0.50) 18.5%, rgba(255, 255, 255, 0.47) 100%);
 }
-
 .section_notre_selection button {
   width: fit-content;
   padding: 15px 70px;
@@ -115,15 +114,13 @@ backdrop-filter: blur(2px);
  font-size: 20px;
  background-color: rgb(247, 239, 226);
 }
-
 .section_notre_selection img
 {
   border-radius: 80px 0px;
 }
-
 .section_notre_selection_2 {
 display: flex;
-gap: auto;
+gap: 100px;
 align-items: center;
 }
 
