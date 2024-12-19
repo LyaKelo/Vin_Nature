@@ -27,9 +27,10 @@
      <div class="section_notre_selection_2">
         <div class="col-4">
           <div class="image_2"><img src="images/image_1.png" alt=""></div>
-        </div>
+        </div> 
+       
         <div class="col-4">
-            <button>Notre sélection 
+            <button onclick="location.href='#notre_gamme'">Notre sélection 
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path d="M12.5 7.11261H8.33984V2.5H6.66016V7.11261H2.5L7.5 12.5L12.5 7.11261Z" fill="black"/>
               </svg>
@@ -40,7 +41,7 @@
     </div>
   </div>
 
-    <div class="section_notre_gamme">
+    <div class="section_notre_gamme" id="notre_gamme">
       <div class="container">
       <div class="row">
         <div class="fleche"><div class="col-1 offset-5"><div class="fleche_1"><img src="images/flèche.svg" alt=""></div></div></div>
@@ -58,21 +59,25 @@
     </div>
       <div class="description"><div class="row">
         <div class="col-7 col-md-6 col-lg-5">Le Velvet argenté 2018 est un vin rouge d’exception, issu des vignobles de Bordeaux. Avec un assemblage harmonieux de Merlot et de Cabernet Sauvignon, il offre un profil aromatique riche et intense, révélant des notes de fruits noirs mûrs comme la cerise et le cassis, subtilement relevées par des touches de vanille et d’épices douces.</div>
-        <div class="col-5">carousel</div>
+        <div class="col-5">
+          <div class="images">
+          <a href="page-vin-rouge.html"><img src="images/vin_rouge.png" alt=""></a>
+          <a href="page-vin-blanc.html"><img src="images/image_vin_blanc.png" alt=""></div></a>
+      </div>
       </div>
     </div>
       <div class="row">
-          <div class="col-3 col-md-2 col-lg-2"> <button>Voir plus de détails <img src="images/right arrow 2-noir.svg" alt=""></button></div>
-      <div class="row">
-        <div class="col-3 col-md-2 col-lg-2"><button>Nos autres vins <img src="images/down arrow alt 2.svg"></button></div> </div>
-      </div>
+        <div class="double_boutons">
+          <div class="col-3 col-md-2 col-lg-2"> <a href="page-vin-rouge.html"> <button>Voir plus de détails <img src="images/right arrow 2-noir.svg" alt=""></button></a></div>
+        <div class="col-3 col-md-2 col-lg-2"><button onclick="location.href='#produits'">Nos autres vins <img src="images/down arrow alt 2.svg"></button></div> </div>
+    </div>
     </div>
    </div>
     </div> 
 
 
  <div class="zone">
-  <div class="nos_valeurs">
+  <div class="nos_valeurs" id="philosophie">
     <div class="container">
         <div class="col-1 offset-5"><div class="fleche_1"><img src="images/flèche.svg" alt=""></div></div>
       <div class="titre">
@@ -96,7 +101,7 @@
     </div>
 
     <div class="zone">
-      <div class="vignerons">
+      <div class="vignerons" id="domaine">
     <div class="container">
       <div class="row">
        <div class="col-1 offset-5"><div class="fleche_1"><img src="images/flèche.svg" alt=""></div></div>
@@ -124,7 +129,7 @@
     </div>
 
  <div class="zone">
-  <div class="produits">
+  <div class="produits" id="produits">
     <div class="container">
       <div class="row">
         <div class="col-1 offset-5"><div class="fleche_1"><img src="images/flèche.svg" alt=""></div></div>
@@ -145,12 +150,9 @@
     </div>
   </div>
 
-    <div class="container">
-     <div class="row">
-       <div class="col-12"><extends src="footer.html"></extends></div>
-      </div>
-    </div>
-    
+  <div class="row" id="footer">
+    <div class="col-12"><extends src="footer.html"></extends></div>
+   </div>
 
     
 

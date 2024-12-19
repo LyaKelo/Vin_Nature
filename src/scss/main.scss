@@ -56,6 +56,14 @@ body {
   background-attachment: fixed;
   padding-left: 40px;
   padding-right: 40px;
+  scroll-behavior: smooth;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header_content {
@@ -89,15 +97,23 @@ a {
   text-decoration: none;
 }
 
+
+
 .zone_footer {
   display: flex;
   background: linear-gradient(180deg, #7F383A 0%, #870B18 100%);
+  padding: 20px 20px 70px 20px;
+}
+.zone_footer button{
+  border: 1px solid var(--Blanc, #FFF);
+  color: #631c1c;
 }
 .footer_titre {
   color: #FFF;
   font-family:'AbhayaLibre_bold';
-font-size: 14px;
+font-size: 17px;
 font-weight: 400;
+margin-bottom: -20px;
 }
 .footer_texte {
   color: #FFF;
@@ -107,12 +123,53 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+.zone_footer .colonne_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.zone_footer .colonne_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.zone_footer .colonne_3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.zone_footer .colonne_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  margin-right: 40px;
+}
+.footer_4_section_1 img{
+  width: 60px;
+}
+.footer_4_section_2{
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_small_text {
+  display: flex;
+  margin-top:-45px;
+  padding: 0px 20px;
+}
+.footer_small_text .gauche{
+  display: flex;
+  gap: 40px;
+  margin-right: 40%;
+}
+
 
 
 
 .section_notre_selection {
   background: linear-gradient(180deg, rgba(238, 190, 120, 0.50) 18.5%, rgba(255, 255, 255, 0.47) 100%);
 backdrop-filter: blur(2px);
+padding: 0px 60px 30px 30px;
 }
 .accueil_catchphrase {
   font-family:'AbhayaLibre_bold';
@@ -127,12 +184,15 @@ backdrop-filter: blur(2px);
 .section_notre_selection button {
   width: fit-content;
   padding: 15px 70px;
-  justify-content: center;
-  gap: 10px;
  border: 1px solid var(--Noir, #000);
  font-family:'AbhayaLibre_bold';
  font-size: 20px;
  background-color: rgb(247, 239, 226);
+ margin-left: 35px;
+}
+.section_autres_selections .bouton {
+  display: flex;
+justify-content: center;
 }
 .section_notre_selection img
 {
@@ -140,7 +200,6 @@ backdrop-filter: blur(2px);
 }
 .section_notre_selection_2 {
 display: flex;
-gap: 100px;
 align-items: center;
 }
 
@@ -162,6 +221,9 @@ align-items: center;
   font-family:'AbhayaLibre_bold';
    font-size: 24px;
 }
+.section_notre_gamme {
+  padding: 30px;
+}
 .section_notre_gamme .titre{
   font-family:'AbhayaLibre_bold';
   font-size: 24px;
@@ -174,6 +236,12 @@ align-items: center;
 .section_notre_gamme .boutons {
   margin-top: 30px;
 }
+.section_notre_gamme .double_boutons {
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .section_notre_gamme button {
   font-family:'AbhayaLibre_bold';
   border: 1px solid var(--Noir, #000);
@@ -181,7 +249,18 @@ align-items: center;
   background-color: white;
   gap: 10px;
   display: flex;
-  
+}
+.section_notre_gamme .images {
+  display: flex;
+  justify-content: start;
+  margin-top: -150px;
+}
+.section_notre_gamme .images img {
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section_notre_gamme .images img:hover {
+  transform: scale(1.05);
 }
 
 .zone .nos_valeurs {
@@ -239,6 +318,10 @@ font-weight: 800;
 background-color: rgba(208, 196, 196, 0.62);
 }
 
+.vignerons {
+  background: linear-gradient(180deg, rgba(238, 190, 120, 0.50) 18.5%, rgba(255, 255, 255, 0.47) 100%);
+  padding: 20px 5px;
+}
 .zone .vignerons .titre {
   display: flex;
 height: 91px;
@@ -285,7 +368,7 @@ font-weight: 800;
  color: #FFF;
  text-align: center;
  font-family: "Abhaya Libre ExtraBold";
- font-size: 20px;
+ font-size: 16px;
  font-weight: 800;
  background-color: #B8222C;
  margin-top: -85px;
@@ -295,6 +378,7 @@ font-weight: 800;
 .zone .produits {
   background: linear-gradient(180deg, #74292E 69%, #B8222C 100%);
   padding-top: 20px;
+  margin-bottom: 100px;
 }
 .zone .produits .titre {
   display: flex;
@@ -323,6 +407,63 @@ margin: 72px 0px;
  font-size: 20px;
  font-weight: 800;
  background-color: #B8222C;
+}
+
+.section_autres_selections{
+  background: linear-gradient(180deg, #FFF 0%, #F0DEC4 82.5%);
+  padding: 30px;
+}
+.section_autres_selections .titre {
+  margin-bottom: 40px;
+}
+.section_autres_selections .boutons {
+  display: flex;
+  justify-content: start;
+  gap: 25%;
+  margin-top: -60px;
+}
+.section_autres_selections .boutons button {
+  border: 1px solid var(--Noir, #461b1b);
+  font-family:'AbhayaLibre_bold';
+  border: 1px solid var(--Noir, #461b1b);
+  padding: 15px 10px;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  margin-left: -50px;
+  width: 150px;
+}
+.third_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.section_autres_selections .third_button button{
+  border: 1px solid var(--Noir, #000000);
+  font-family:'AbhayaLibre_bold';
+  border: 1px solid var(--Noir, #000000);
+  padding: 15px 10px;
+  background-color: rgb(255, 244, 225);
+  gap: 10px;
+  display: flex;
+  color: rgb(67, 52, 23);
+  justify-content: center;
+  width: 928px;
+}
+.section_autres_selections .titre{
+  display: flex;
+  height: 91px;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  color: var(--Noir, #000);
+font-family: "Abhaya Libre ExtraBold";
+font-size: 30px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
 }
 
 
@@ -373,6 +514,10 @@ line-height: normal;
   flex-direction: column;
   gap: 28px; 
 }
+.zone .description_buttons {
+  gap: 10px;
+  margin-top: 40px;
+}
 .zone .description_buttons button {
   display: flex;
 width: max-content;
@@ -381,5 +526,7 @@ padding: 15px 10px;
 justify-content: center;
 align-items: center;
 margin-bottom: 10px;
-border: 1px solid var(--Noir, #000);
+border: 1px solid var(--Noir, #4d442a);
+background-color: rgb(255, 253, 249);
+font-family: "Abhaya Libre";
 }
